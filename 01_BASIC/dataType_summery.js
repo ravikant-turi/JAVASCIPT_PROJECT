@@ -35,3 +35,30 @@ const myFunction=function(){
     console.log("Hello world");
 }
 myFunction()
+
+
+
+
+//************************stack and heap******************* */
+//stack : primitive data type and only copy the value
+//heap :(non primitive) give the refrence
+let myName="ravikant";
+let anotherName="turi";
+anotherName="vishal"
+
+console.log(myName)//ravikant
+console.log(anotherName);//vishal
+// primitive data type in stores in stack and directly copy the value,so it is giving the different value
+let oneUser={
+    email:"ravi@google.com",
+    upi:"ravi@ybl"
+}
+let twoUser=oneUser;
+twoUser.email="another@google.com";
+console.log(oneUser.email);//another@google.com"
+console.log(twoUser.email);//another@google.com"
+
+// reason : both have same changed email because it nonpremitive data type and 
+// non primitive data type stros in heap not in stack and it share the referece 
+
+
