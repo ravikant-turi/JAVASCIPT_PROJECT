@@ -29,4 +29,3 @@ console.log(newString);//hell
 
 const anotherString=gameName.slice(2,5);
 console.log(anotherString);//llo
-
